@@ -20,3 +20,24 @@ jobs:
       - name: "pushing"
         run: docker push youssef147/myimage 
 
+on:
+  push:
+     branches:
+         - master 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:   
+      - name: 'testing gitgub actions'
+        run: pwd
+
+      - name: 'testing printing'
+        run: echo youssef
+      - name: "log into docker hub"
+        run: docker login --username yousefsameh174@gmail.com -password 78789858yui
+      - name: "bulding docker image"
+        run: docker build -t youssef147/myimage .
+      - name: "pushing"
+        run: docker push youssef147/myimage
+
