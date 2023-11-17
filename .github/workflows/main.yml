@@ -9,3 +9,5 @@ jobs:
              steps:
               - name: "log into docker"
                 run: docker login
+              - name: "building docker image"
+                run: docker build -t myimage/youssef147 .
