@@ -12,4 +12,4 @@ jobs:
         run: pwd
 
       - name: 'testing printing'
-        run: encho youssef
+        run: echo youssef
