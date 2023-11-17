@@ -10,4 +10,7 @@ jobs:
               - name: "log into docker"
                 run: docker login
               - name: "building docker image"
-                run: docker build -t dockerfile.
+                run: docker build -t youssef147/dockerfile .
+              - name: "pushing"
+                run: docker push youssef147/dockerfile.
+
