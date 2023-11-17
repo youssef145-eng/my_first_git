@@ -15,3 +15,7 @@ jobs:
         run: echo youssef
       - name: "log into docker hub"
         run: docker login --username yousefsameh174@gmail.com -password 78789858yui
+      - name: "bulding docker image"
+        run: docker build -t youssef147/myimage .
+
+
